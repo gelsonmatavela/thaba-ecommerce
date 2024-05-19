@@ -1,0 +1,22 @@
+<h1 style="margin: 0 0 0 40px;">Resultados da pesquisa</h1>
+
+<div class="row2">
+
+    <% if(artigo != ''){%>
+        <% artigo.forEach(function(artigos, index){ %>
+
+    <a href="/artigo/<%= artigos.id%>" class="col category_link">
+        <div class="category_img category_img--large">
+            <img src="/uploads/<%= artigos.imagem%>" alt="<%= artigos.nome%>" loading="lazy" />
+        </div>
+        <div class="pt-1">
+            <%= artigos.marca%>
+        </div>
+        <p><%= artigos.preco%>MZN</p>
+    </a>
+    <%})%>
+    <%} else{ %>
+        <p>Nenhum item encontrado</p>
+        <%}%>
+
+</div>

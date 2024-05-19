@@ -1,0 +1,77 @@
+<% if(artigo !=null){%>
+    <div class="row3">
+        <main>
+            <table>
+                <tr>
+                    <td class="lateral-esquerdo">
+                        <div class="dentro" href="#">
+                            <div class="artigo">
+                                <img src="/img/<%-artigo.imagem%>" alt="pasta de costa">
+                                <div class="nome-artigo">
+                                    <h6><%-artigo.nome%></h6>
+                                    <div class="precario">
+                                        <p class="valor-pago"><%-artigo.preco%> MZN<a href="#"><button id="btn">reservar</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="lateral-direito">
+                        <div class="dentro">
+                            <div class="informacao">
+                                <div class="titulo-1">
+                                    <h4><%-artigo.departamento%></h4>
+                                </div>
+                                <div class="titulo-1">
+                                    <h4>Descrição</h4>
+                                </div>
+                                <div class="info-descricao">
+                                    <p><%-artigo.descricao%></p>
+                                </div>
+                                <div class="conteudo">
+                                    <div class="titulo-2">
+                                        <h4>Marca</h4>
+                                        <p><%-artigo.marca%></p>
+                                    </div>
+                                    <div class="titulo-3">
+                                        <h4>Tipo Feixo</h4>
+                                        <p><%-artigo.tipo_de_fecho%></p>
+                                    </div>
+                                    <div class="titulo-4">
+                                        <h4>Material</h4>
+                                        <p><%-artigo.material%></p>
+                                    </div>
+                                    <div class="titulo-5">
+                                        <h4>Preço</h4>
+                                        <p><%-artigo.preco%> MZN</p>
+                                    </div>
+                                </div>
+                                <div class="conteudo">
+                                    <div class="titulo-2">
+                                        <h4>Cor</h4>
+                                        <p><%-artigo.cor%></p>
+                                    </div>
+                                    <div class="titulo-3">
+                                        <h4>Numero Bolsos</h4>
+                                        <p><%-artigo.numero_de_bolsos%></p>
+                                    </div>
+                                    <div class="titulo-4">
+                                        <h4>Unidade Disponível</h4>
+                                        <p><%-artigo.quantidade%></p>
+                                    </div>
+                                    <div class="titulo-5">
+                                        <h4>Dimensão</h4>
+                                        <p><%-artigo.dimensao%></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+    </div>
+    <%}else{%>
+        <p>Nenhum item encontrado</p>
+    <%}%>

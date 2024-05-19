@@ -1,0 +1,19 @@
+<h1 style="margin: 0 0 0 40px;">Explore items aleatoriamente...</h1>
+
+<div class="row2">
+
+    <% if(artigo != ''){%>
+    
+    <a href="/artigo/<%= artigo.id%>" class="col category_link">
+        <div class="category_img category_img--large">
+            <img src="/uploads/<%= artigo.imagem%>" alt="<%= artigo.nome%>" loading="lazy" />
+        </div>
+        <div class="pt-1">
+            <%= artigo.marca%>
+        </div>
+        <p><%= artigo.preco%>MZN</p>
+    <%} else{ %>
+        <p>Nenhum item encontrado</p>
+        <%}%>
+
+</div>

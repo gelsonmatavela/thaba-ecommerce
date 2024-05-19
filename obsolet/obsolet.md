@@ -1,0 +1,12 @@
+"departamento":"",
+"codigo_produto":"luisvuiton20231001",
+"nome":"Malas de Viagem",
+"marca":"Cat",
+"material":"Veludo",
+"quantidade":2567,
+"preco":1928,
+"tipo_de_fecho": "Unico",
+"cor":"Rosa",
+"numero_de_bolsos": 20,
+"dimensao":"x: 279cm y: 190",
+"imagem":"mala-viagem-01.jpeg"

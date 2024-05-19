@@ -1,0 +1,165 @@
+.row{
+    display: flex;
+    margin: -6% 0 0 20px;
+    gap: 15px;
+    padding: 4px;
+    margin-bottom: 4px;
+    flex-direction: row-reverse;
+}
+
+.row  img{
+    width: 607px;
+    height: 510px;
+}
+.col{
+    margin-top: 50px;
+}
+
+.col .display{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.col .btns{
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+}
+
+.col .btns .btn{
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.col .btns .btn:hover{
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+}
+
+/* categorias */
+
+.row2{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-top: 4px;
+    text-align: center;
+}
+
+.category_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.category_img--large{
+    height: 230px;
+}
+
+.category_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.category_link{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 250ms all;
+    color: black;
+}
+
+.category_link:hover{
+    transform: scale(1.1);
+}
+
+/* latest start */
+section{
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+section div{
+    display: flex;
+    align-items: center;
+}
+
+section .articles {
+    display: flex;
+    margin: 0 0 0 40px;
+    gap: 450px;
+}
+
+.section .row2{
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-top: 4px;
+    text-align: center;
+    margin: -30px 0;
+}
+
+section .articles a{
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 150px;
+
+}
+
+.col p{
+    text-align: left;
+    margin-bottom: 45px;
+    gap: 10px;
+}
+
+/* section submit */
+.submit{
+    padding-top: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.submit img{
+    display: block;
+    margin: 6% 0 0 42%;
+    margin-bottom: 4px;
+    width: 200px;
+    height: 200px;
+}
+
+.submit h1{
+    display: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+ .lead {
+    align-items: center;
+    text-align: center;
+}
+
+.link .btns{
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 0 0 520px;
+}

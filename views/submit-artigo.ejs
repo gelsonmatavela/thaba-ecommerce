@@ -1,0 +1,148 @@
+<h1>Submeta Artigo</h1>
+<div class="formulario">
+    
+    <table>
+        <tr>
+            <td>
+                <form action="/submit-artigo" method="post" enctype="multipart/form-data">
+
+                    <div class="informacoes">
+                        <div class="conteudos">
+                            <input type="text" name="departamento" id="" placeholder="nome do departamento">
+                            <select id="category-filter" class="conteudos" onchange="filterByCategory()">
+                                <option value="opções">filtrar por categoria</option>
+                                <option value="Bolsa">Bolsa</option>
+                                <option value="Mochila">Mochila</option>
+                                <option value="Mala Informativa">Mala Informativa</option>
+                                <option value="Mala de Laptop">Mala de Laptop</option>
+                                <option value="Sacola de Viagem">Sacola de Viagem</option>
+                                <option value="Carteira">Carteira</option>
+                                <option value="Capa de Celular">Capa de Celular</option>
+                            </select>
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="codigo_produto" id="" placeholder="codigo do produto">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="nome" id="" placeholder="nome do produto">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="marca" id="" placeholder="marca do produto">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="material" id="" placeholder="material de produção">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="quantidade" id="" placeholder="quantidade disponivel">
+                        </div>
+                        <div class="conteudos" id="descricao">
+                            <input type="text" name="descricao" id="descricao" placeholder="descrição do produto">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="preco" id="" placeholder="preço do produto">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="tipo_de_fecho" id="" placeholder="tipo de fecho,se necesario">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="cor" id="" placeholder="cor do produto">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="dimensao" id="" placeholder="dimensão do artigo, se necesário">
+                        </div>
+                        <div class="conteudos">
+                            <input type="text" name="numero_de_bolsos" id="" placeholder="número de bolsas existentes, se necessario">
+                        </div>
+                        <div class="conteudos">
+                            <div>
+                                <label for="imagem">escolha uma imagem</label>
+                            </div>
+                            <input type="file" name="imagem" id="imagem" class="form-control" accept="image/*" placeholder="imagem do produto">
+                        </div>
+                        <div class="conteudos btn">
+                           <button type="submit"><b>ENVIAR</b></button>
+                        </div>
+                    </div>
+            
+                </form>
+            </td>
+            <td>
+                <div class="foto">
+                    <img src="/img/thaba-logo.jpeg" alt="">
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    .formulario {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        width: 70%; 
+        margin: 0 auto;
+    }
+
+    .formulario table {
+        width: 100%;
+    }
+
+    .formulario td {
+        vertical-align: top;
+    }
+
+    .informacoes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .conteudos {
+        flex: 1;
+        margin: 16px;
+    }
+
+    .conteudos input[type="text"], .conteudos input[type="file"] {
+        width: 220px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    .conteudos #category-filter{
+        width: 200px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .conteudos input[type="file"] {
+        padding: 0;
+    }
+
+    .conteudos button {
+        width: 90px; 
+        padding: 10px 10px 10px 10px;
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    #descricao{
+        height: 50px;
+    }
+
+    .conteudos button:hover {
+        background-color: #2a2a2a;
+    }
+
+    .foto img {
+        width: 120px;
+        height: 120px;
+        margin: 0 0 0 70px;
+    }
+</style>
+
